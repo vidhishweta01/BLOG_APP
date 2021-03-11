@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-    <div class="align-middle text-center ">
-      <%= form.label :Title, class:"bg-warning text-bolder" %>
-      <%= form.text_field :Title, class:"form-control-lg" %>
+    <div class="align-middle ">
+      <%= form.label :Title, class:"bg-warning text-bolder p-2" %>
+      <%= form.text_field :Title, class:"form-control" %>
     </div>
 
-    <div class="mt-3 text-center">
-      <%= form.label :blog, class:"bg-warning text-bolder" %>
-      <%= form.text_area :blog, class:"form-control-lg" %>
+    <div class="mt-3">
+      <%= form.label :blog, class:"bg-warning text-bolder p-2" %>
+      <%= form.text_area :blog, size: "30x20", class:"form-control" %>
     </div>
 
-    <div class="mt-3 text-center">
-      <%= form.label :author, class:"bg-warning text-bolder" %>
-      <%= form.text_field :author, class:"form-control-lg" %>
+    <div class="mt-3 ">
+      <%= form.label :author, class:"bg-warning text-bolder p-2" %>
+      <%= form.text_field :author, class:"form-control" %>
     </div>
 
-    <div class="mt-3 text-center">
+    <div class="mt-3">
       <%= form.submit class:"btn btn-info" %>
     </div>
 <% end %>
