@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 <div class="container-fluid">
-  <p class="text-left ml-3">
-    <strong>Title:</strong>
+  <div class="text-left text-dark bg-warning ml-3 p-1 font-weight-bolder" style="font-size: 20px; font-weight: bolder; opacity: 0.8;">
+    <h4>Title:</h4>
     <%= @article.Title%>
-  </p>
+  </div>
 
-  <div class="text-left ml-3">
-    <strong>Blog:</strong>
+  <div class="text-left font-weight-bolder ml-3 text-dark bg-warning " style="opacity: 0.8;">
+    <h2>Blog:</h2>
     <br>
-    <div class="text-left mr-2 bg-light p-2">
+    <div class="text-left mr-2 bg-light text-dark p-2" style= "font-size: 20px; font-weight: bold; color:rgb(9, 9, 27); ">
     <%= @article.blog %>
     </div>
   </div>
 
-  <p class="text-left ml-3">
-    <strong>Author:</strong>
+  <div class="text-left ml-3 text-dark bg-warning p-1" style="font-size: 20px; font-weight: bolder; opacity: 0.8;">
+    <h3>Author:</h3>
     <%= @article.author %>
-  </p>
+  </div>
 </div>
+<br>
 
+<div class="text-center"><%= link_to 'Edit', edit_article_path(@article), class:"btn btn-danger mr-1" %>
 
-<div class="text-center"><%= link_to 'Edit', edit_article_path(@article), class:"btn btn-info mr-1" %>
-
-<%= link_to 'Back', articles_path, class:"btn btn-info" %></div>
+<%= link_to 'Back', articles_path, class:"btn btn-danger" %></div>

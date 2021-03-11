@@ -56,6 +56,17 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def search
+    def search  
+      if params[:search].blank?  
+        redirect_to(root_path, alert: "Empty field!") and return  
+      else  
+        @parameter = params[:search].downcase  
+        @article = Article.all.where("lower(Title) LIKE :search", search: "%#{@parameter}%")  
+      end  
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article

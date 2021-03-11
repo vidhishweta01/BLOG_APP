@@ -1,31 +1,22 @@
 <p id="notice"><%= notice %></p>
-
-
-<h1 class="text-center ">Write Your Views</h1>
-<div class="container align-middle bg-light px-0">
-<table class="table">
-  <thead class="thead-dark text-center">
-    <tr>
-      <th scope="col text-light text-center">Title</th>
-      <th scope="col text-light text-center">Author</th>
-      <th scope="col text-light text-center">Actions</th>
-    </tr>
-  </thead>
-
-  <tbody class="text-center">
-    <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.Title %></td>
-        <td><%= article.author %></td>
-        <td class="w-25">
-          <div class="d-flex flex-row w-100 justify-content-center px-3">
-            <%= link_to 'Show', article, class:'text-center' %>
-            <%= link_to 'Edit', edit_article_path(article), class:'mx-1'%>
-            <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class:'text-center' %>
-          </div>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="row">
+<% @articles.each do |article| %>
+<div class="col-sm-4">
+  <div class="card mb-3" >
+    <div class="card-body">
+      <h5 class="card-title text-dark" style="font-weight: bolder;" >
+        <%= article.Title %>
+      </h5>
+      <div class="card-text text-dark" style="background-color: rgb(180, 157, 175);">
+        <%= article.blog.truncate(120) %>
+        <%= article.author %>
+      </div>
+      <%= link_to 'Read More', article_path(article), class: "btn btn-info" %>
+      <%# <%= link_to 'Show', article, class:'btn btn-info text-center' %>
+      <%= link_to 'Edit', edit_article_path(article), class:'btn btn-info text-center mx-1'%>
+      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-info text-center' %>
+    </div>
+  </div>
+</div>
+<% end %>
 </div>

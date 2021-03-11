@@ -1,0 +1,11 @@
+<h3>Search Result</h3>  
+<%if @article.nil?%>
+  <%= root_path %>
+<%else%>
+  <% @article.each do |article| %>  
+        <%= article.Title %><br>
+        <%= article.blog.truncate(110) %><br> 
+        <%= link_to 'Read More', article_path(article), class: "btn btn-info" %> 
+    <% end %>
+<%end%>
+    
