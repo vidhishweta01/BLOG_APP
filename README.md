@@ -1,24 +1,48 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Project is just a demo of a blog app and does basic CRUD functions such as creating a blog, displaying it, make queries over database.
 
-Things you may want to cover:
+## Ruby version
 
-* Ruby version
+2.7.1
 
-* System dependencies
+## System dependencies
 
-* Configuration
+yarn - 1.22.5
+Nodejs - v12.21.0
+SQLite3
 
-* Database creation
+## Authors
 
-* Database initialization
+- GitHub: [@ShwetaSrivastava](https://github.com/vidhishweta01)
+- Twitter: [@ShwetaSrivastava](https://twitter.com/vidhishweta01)
+- LinkedIn: [ShwetaSrivastava](https://www.linkedin.com/in/vidhishweta01/)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Ryel Banfield**
 
-* Deployment instructions
+- GitHub: [@RyelBanfield](https://github.com/RyelBanfield)
+- Twitter: [@RyelBanfield](https://twitter.com/RyelBanfield)
+- LinkedIn: [RyelBanfield](https://www.linkedin.com/in/ryel-banfield/)
 
-* ...
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](LICENSE) license
+
+👤 **Ryel Banfield**
+
+- GitHub: [@RyelBanfield](https://github.com/RyelBanfield)
+- Twitter: [@RyelBanfield](https://twitter.com/RyelBanfield)
+- LinkedIn: [RyelBanfield](https://www.linkedin.com/in/ryel-banfield/)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.
